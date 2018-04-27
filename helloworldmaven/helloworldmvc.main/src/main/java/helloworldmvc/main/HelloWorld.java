@@ -4,7 +4,7 @@ import helloworldmvc.controller.Controller;
 import helloworldmvc.model.Model;
 import helloworldmvc.view.View;
 
-public class HelloWolrd {
+public class HelloWorld {
 
 	public static void main(String[] args) {
 		
