@@ -4,8 +4,8 @@ import helloworldmvc.contract.IModel;
 
 public class Model implements IModel {
 
-	public String getHelloWorld() {
-		return null;
+	public String getHelloWorld(){
+		return DataGetter.getDataGetter().getText();
 	}
 
 }

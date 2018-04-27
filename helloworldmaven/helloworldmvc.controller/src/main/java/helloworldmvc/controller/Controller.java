@@ -1,5 +1,7 @@
 package helloworldmvc.controller;
 
+import java.util.Random;
+
 import helloworldmvc.contract.IModel;
 import helloworldmvc.contract.IView;
 
@@ -13,7 +15,15 @@ public class Controller {
 			this.model = model;
 		}
 		
-		public void run(){
-			this.view.displayMessage(this.model.getHelloWorld());
+		public void run() throws ChevreExeception {
+			Random rand =new Random();
+			
+			if(rand.nextInt(100) < 50){
+				this.view.displayMessage(this.model.getHelloWorld());
+			}else {
+				throw new ChevreExeception();
+			}
+					
+			
 		}
 }
